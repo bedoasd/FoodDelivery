@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/forwardar.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-v24/bg_rounded_gray.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/arrowbg.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/bg_rounded.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/btn_sign_bg.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/email_bg.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/email_bg2.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/signbg.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/welcom_gradiant_bg.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/Registeration.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/login.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboarding_three.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboarding_two.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboardingone.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/resetpassword.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/signup.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/splash.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/verificationcode.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/welcome.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
