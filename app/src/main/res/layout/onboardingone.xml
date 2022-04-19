@@ -11,8 +11,8 @@
         android:layout_height="310dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:src="@drawable/onboarding_one"
         android:scaleType="centerCrop"
+        android:src="@drawable/onboarding_one"
         app:riv_tile_mode="repeat" />
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -55,7 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="44dp"
-        android:background="@drawable/arrowbg"
+        android:background="@drawable/bgarrow"
         android:padding="20dp"
         android:src="@drawable/forwardar"
         />

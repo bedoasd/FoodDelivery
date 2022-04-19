@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/welcom_gradiant_bg"
+        android:background="@drawable/bg_welcom_gradiant"
         android:gravity="bottom|center"
         android:orientation="vertical">
 

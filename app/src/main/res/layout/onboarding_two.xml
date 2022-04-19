@@ -55,7 +55,7 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_marginTop="44dp"
-        android:background="@drawable/arrowbg"
+        android:background="@drawable/bgarrow"
         android:padding="20dp"
         android:src="@drawable/forwardar" />
 

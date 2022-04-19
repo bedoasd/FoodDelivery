@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/food_image"
+        android:layout_width="345dp"
+        android:layout_height="206dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/mcdonalds"
+        app:riv_corner_radius="10dp"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/back"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="37dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="7dp"
+        android:src="@drawable/white_heart" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/food_image"
+        android:layout_marginStart="25dp"
+        android:gravity="top"
+        android:text="Ground Beef Tacos"
+        android:textColor="@color/black"
+        android:textSize="31sp" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/txt1"
+        android:src="@drawable/start_rating"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/rating_txt"
+        android:layout_below="@id/txt1"
+        android:layout_toEndOf="@id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:text="4.5"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/rating_txt"
+        android:text="(30+)"
+        android:textColor="#9796A1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/see_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/rating_number"
+        android:text="See Review"
+        android:textColor="@color/orange"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="63dp"
+        android:layout_height="1dp"
+        android:background="@color/orange"
+        android:layout_below="@+id/see_reviews"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@id/rating_number"
+
+        />
+
+    <TextView
+        android:id="@+id/doalr_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/star"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        android:text="$"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+
+        />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/star"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@+id/doalr_sign"
+        android:text="9.50"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_below="@id/star"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn_sign"
+        android:src="@drawable/plus"
+        android:padding="10dp"
+        android:layout_marginEnd="27dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/star"
+        android:layout_toStartOf="@+id/plus"
+        android:layout_marginTop="17dp"
+        android:text="02"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        />
+
+    <ImageView
+        android:id="@+id/minius"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_below="@id/star"
+        android:layout_marginTop="15dp"
+        app:riv_corner_radius="50dp"
+        android:background="@drawable/bg_btn_minus"
+        android:src="@drawable/minus"
+        android:padding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/quantity"
+        />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_marginLeft="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Brown the beef better. Lean ground beef – I \nlike to use 85% lean angus. Garlic – use fresh  chopped. Spices – chili powder, cumin, onion powder."
+        android:textColor="#9796A1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:gravity="top"
+        android:text="Choice of Add On"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/alata"
+        />
+
+
+    <LinearLayout
+        android:id="@id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt4"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/papper" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:text="Pepper  julienned"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="69dp"
+            android:text="+$2.30"
+            android:textColor="#9796A1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/vegitables" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:text="Baby spinach"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="69dp"
+            android:text="+$2.30"
+            android:textColor="#9796A1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/masroom" />
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:text="Masroom"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="69dp"
+            android:text="+$2.30"
+            android:textColor="#9796A1"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/lin3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/addtocart_btn"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="5dp"
+        />
+
+
+
+</RelativeLayout>

@@ -60,7 +60,7 @@
         android:layout_below="@id/txt_Email"
         android:layout_marginStart="26dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/email_bg2"
+        android:background="@drawable/bg_email2"
         android:inputType="textEmailAddress"
         android:paddingStart="20dp"
         android:text="prelookstudio@gmail.com"
@@ -86,7 +86,7 @@
         android:layout_marginLeft="27dp"
         android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:background="@drawable/email_bg2"
+        android:background="@drawable/bg_email2"
         android:orientation="horizontal"
         >
 
@@ -126,7 +126,7 @@
         android:layout_below="@id/forgot_password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:background="@drawable/btn_sign_bg"
+        android:background="@drawable/bg_btn_sign"
         android:padding="10dp"
         android:text="Login"
         android:textColor="@color/white"
