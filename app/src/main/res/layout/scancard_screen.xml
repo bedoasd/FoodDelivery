@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/bg_email2"
+            android:padding="13dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Scasn Card"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Please hold the card inside the frame\nto start scaning"
+        android:layout_below="@id/lin1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#8387A7"
+        android:textAlignment="center"
+        android:layout_marginTop="65dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/scanning_creditcard"
+        android:layout_width="325dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="116dp"
+        android:src="@drawable/scanning_creditcard"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:paddingTop="35dp"
+        />
+
+    <Button
+        android:id="@+id/btn_save_scanning_visa"
+        android:layout_width="248dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/scanning_creditcard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="214dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="10dp"
+        android:text="SCANNING..."
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

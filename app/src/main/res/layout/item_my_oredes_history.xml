@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="315dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="160dp">
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_search_logo_history"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_piza"
+        android:src="@drawable/piza"
+        app:riv_corner_radius="100dp" />
+
+    <TextView
+        android:id="@+id/date_order_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/item_search_logo_history"
+        android:text="20 Jun, 10:30"
+        android:textSize="12sp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/items_count_order_details"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/date_order_details"
+        android:text="3 Items"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/order_details_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/items_count_order_details"
+        android:text="$15.30"
+        android:textColor="@color/orange"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_search_title_order_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_order_details"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="3dp"
+
+        android:layout_toEndOf="@id/item_search_logo_history"
+        android:fontFamily="@font/alata"
+        android:text="Pizza Hut"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_below="@id/date_order_details"
+        android:layout_toEndOf="@id/item_search_title_order_details"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/verificationsign"
+        android:layout_marginStart="5dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dott"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_below="@id/item_search_title_order_details"
+        app:cardBackgroundColor="#4EE476"
+        app:cardCornerRadius="5dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@id/item_search_logo_history"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_search_title_order_details"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@id/dott"
+        android:text="Order Delivered"
+        android:textColor="#4EE476"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/rate_history"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/item_search_title_order_details"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/bg_rounded_gray"
+        android:text="Rate"
+        android:fontFamily="@font/alata"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/reoreder_history"
+        android:layout_width="135dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/item_search_title_order_details"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="39dp"
+        android:layout_toEndOf="@id/rate_history"
+        android:background="@drawable/bg_btn_sign"
+        android:text="Re-Order"
+        android:fontFamily="@font/alata"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

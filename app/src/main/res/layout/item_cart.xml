@@ -7,7 +7,7 @@
     android:layout_marginTop="5dp">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/image_cart_item"
+        android:id="@+id/image_order_details_item"
         android:layout_width="83dp"
         android:layout_height="83dp"
         android:src="@drawable/item_cart_img"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
-        android:layout_toEndOf="@id/image_cart_item"
+        android:layout_toEndOf="@id/image_order_details_item"
         android:fontFamily="@font/alata"
         android:text="Red n hot pizza"
         android:textColor="@color/black"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="12sp"
-        android:layout_toEndOf="@id/image_cart_item"
+        android:layout_toEndOf="@id/image_order_details_item"
         android:layout_below="@id/food_title_cart"
         android:layout_marginStart="27dp"
         android:text="Spicy chicken, beef"
@@ -54,7 +54,7 @@
         android:text="$"
         android:textSize="11sp"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@id/image_cart_item"
+        android:layout_toEndOf="@id/image_order_details_item"
         android:layout_marginStart="27dp"
         android:textColor="@color/orange"
         />
