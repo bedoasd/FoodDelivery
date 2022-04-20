@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/restaurant_profile_image"
+        android:layout_width="345dp"
+        android:layout_height="206dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pizzahut"
+        app:riv_corner_radius="10dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/back"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="34dp" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="7dp"
+        android:src="@drawable/white_heart" />
+
+    <RelativeLayout
+        android:id="@+id/img_profile"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rating_homescreen"
+        android:layout_marginTop="124dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="81dp"
+            android:layout_height="81dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="40dp"
+            app:cardBackgroundColor="#FFC529"
+            >
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/piza"
+                android:layout_gravity="center"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/restaurant_title"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_marginStart="25dp"
+        android:gravity="center"
+        android:fontFamily="@font/alata"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Pizza Hut"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/restaurant_address"
+        android:layout_below="@id/restaurant_title"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:gravity="center"
+        android:fontFamily="@font/alata"
+        android:layout_centerHorizontal="true"
+        android:text="4102  Pretty View Lanenda"
+        android:textColor="#9796A1"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/pizza_tag"
+        android:layout_width="44dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant_address"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_gray"
+        android:text="pizza"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/chicken_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant_address"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/pizza_tag"
+        android:background="@drawable/bg_gray"
+        android:text="CHICKEN"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/fastfood_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/restaurant_address"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/chicken_tag"
+        android:background="@drawable/bg_gray"
+        android:text="FAST FOOD"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/delivery_sign"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/pizza_tag"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/delivery_sign"
+
+        />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizza_tag"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/delivery_sign"
+        android:layout_marginTop="5dp"
+        android:text="free delivery"
+        android:textColor="#5B5B5E"
+        android:textSize="16sp"
+
+        />
+
+    <ImageView
+
+        android:id="@+id/delivery_alarm"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_below="@id/pizza_tag"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/txt2"
+        android:src="@drawable/delivery_alarm" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pizza_tag"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/delivery_alarm"
+        android:text="10-15 mins"
+        android:textColor="#5B5B5E"
+        android:textSize="16sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/delivery_sign"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/start_rating" />
+
+    <TextView
+        android:id="@+id/rating_txt"
+        android:layout_below="@id/delivery_sign"
+        android:layout_toEndOf="@id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:text="4.5"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery_sign"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/rating_txt"
+        android:text="(30+)"
+        android:textColor="#9796A1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/see_reviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery_sign"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/rating_number"
+        android:text="See Review >"
+        android:textColor="@color/orange"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/star"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alata"
+        android:text="Featured items"
+        android:textColor="#111719"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/number_of_itemes_featured"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/star"
+        android:layout_toEndOf="@id/txt3"
+        android:background="@drawable/bg_yellow_rounded"
+        android:text="9"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_featureditems_restautrant_profile"
+        android:layout_width="270dp"
+        android:layout_height="204dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="26dp"
+        android:orientation="horizontal" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recycler_featureditems_restautrant_profile"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_rounded"
+                android:text="All"
+                android:textColor="#5B5B5E"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_rounded"
+                android:text="Legends"
+                android:textAllCaps="false"
+                android:textColor="#5B5B5E"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_rounded"
+                android:text="Bundles"
+                android:textAllCaps="false"
+                android:textColor="#5B5B5E"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/bg_rounded"
+                android:text="Additional"
+                android:textAllCaps="false"
+                android:textColor="#5B5B5E"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+</RelativeLayout>

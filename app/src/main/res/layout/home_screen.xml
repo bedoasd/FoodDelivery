@@ -125,12 +125,11 @@
         android:layout_width="51dp"
         android:layout_height="51dp"
         android:layout_below="@id/txt1"
-        android:src="@drawable/filter"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="25dp"
-        android:padding="13dp"
         android:background="@drawable/bg_email2"
-        />
+        android:padding="13dp"
+        android:src="@drawable/filter" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_category"
@@ -152,8 +151,7 @@
         android:text="Featured restaurants"
         android:textColor="#111719"
         android:textSize="18sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/bg_map_payment.xml" value="0.2657407407407407" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/bg_piza.xml" value="0.2657407407407407" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/bg_piza2.xml" value="0.2657407407407407" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/bg_selector.xml" value="0.2657407407407407" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-anydpi/forwardar.xml" value="0.31574074074074077" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-hdpi/bg_gray.xml" value="0.27037037037037037" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable-hdpi/bg_restaurant_item_homscreen.xml" value="0.2657407407407407" />
@@ -16,6 +20,7 @@
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/bg_email2.xml" value="0.2657407407407407" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/bg_rating_homescreen.xml" value="0.2657407407407407" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/bg_rounded.xml" value="0.31574074074074077" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/bg_yellow_rounded.xml" value="0.2657407407407407" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/btn_sign_bg.xml" value="0.31574074074074077" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/category_item_homscreen_bg.xml" value="0.26851851851851855" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/drawable/email_bg.xml" value="0.31574074074074077" />
@@ -27,18 +32,27 @@
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout-v28/home_screen.xml" value="0.3375" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/Registeration.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/cart_screen.xml" value="0.33" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/category_item_homescreen.xml" value="0.5" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/category_screen.xml" value="0.33" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/food_details.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/home_screen.xml" value="0.27341772151898736" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_cart.xml" value="0.33" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_category_homescreen.xml" value="0.27341772151898736" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_featureditems_restaurant_profilr_screen.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_restaurant_homescreen.xml" value="0.5" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_search_food.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/item_serch_restaurant.xml" value="0.33" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/login.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboarding_three.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboarding_two.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/onboardingone.xml" value="0.25" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/payment_screen.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/phone_registeration.xml" value="0.3375" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/resetpassword.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/restaurant_item_homescreen.xml" value="0.27341772151898736" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/restaurant_profile.xml" value="0.33" />
+        <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/search_restaurant.xml" value="0.33" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/signup.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/splash.xml" value="0.25" />
         <entry key="..\:/TestsProjects/FoodDelivery/app/src/main/res/layout/verificationcode.xml" value="0.25" />

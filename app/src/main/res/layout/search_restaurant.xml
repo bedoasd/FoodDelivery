@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Search Food"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/profile_img_search_restaurant"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/profile_image"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/lin1"
+        android:background="@drawable/bg_gray"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/search"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="Fast food"
+            android:textSize="14sp"
+            android:fontFamily="@font/alata"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/black"
+            />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/lin1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/filter" />
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="323dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/lin2"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_selector"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/foodbtn_selector"
+            android:layout_weight="1"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:textSize="14sp"
+            android:background="@drawable/bg_rating_homescreen"
+            android:text="Food Item"
+            android:textColor="@color/orange"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/restaurantbtn_selector"
+            android:layout_weight="1"
+            android:layout_width="159dp"
+            android:layout_height="47dp"
+            android:textSize="14sp"
+            android:background="@drawable/bg_btn_sign"
+            android:text="Restaurant"
+            android:textColor="@color/white"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_results_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/alata"
+        android:text="Found \n56 results"
+        android:textColor="@color/black"
+        android:textSize="31sp" />
+
+    <!--GrideView-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_grid_restaurants_founded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_results_number"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="26dp"
+        />
+
+</RelativeLayout>

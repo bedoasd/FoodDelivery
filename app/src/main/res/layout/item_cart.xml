@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="326dp"
+    android:layout_height="83dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="5dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image_cart_item"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:src="@drawable/item_cart_img"
+        android:layout_marginStart="5dp"
+        app:riv_corner_radius="10dp"
+        />
+
+    <TextView
+        android:id="@+id/food_title_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@id/image_cart_item"
+        android:fontFamily="@font/alata"
+        android:text="Red n hot pizza"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/image_cart_item"
+        android:layout_below="@id/food_title_cart"
+        android:layout_marginStart="27dp"
+        android:text="Spicy chicken, beef"
+        android:textColor="#9796A1"
+        android:fontFamily="@font/alata"
+        />
+
+    <ImageView
+        android:id="@+id/delete_item"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/delet"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/dollarsign_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textSize="11sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/image_cart_item"
+        android:layout_marginStart="27dp"
+        android:textColor="@color/orange"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/dollarsign_cart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="3dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:text="9.50" />
+
+
+    <ImageView
+        android:id="@+id/plus_cart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="10dp"
+        android:src="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/quantity_cart"
+        android:layout_width="21dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/plus_cart"
+        android:text="02"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/minius_cart"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/quantity_cart"
+        android:background="@drawable/bg_btn_minus"
+        android:padding="10dp"
+        android:src="@drawable/minus"
+        app:riv_corner_radius="50dp" />
+
+
+</RelativeLayout>

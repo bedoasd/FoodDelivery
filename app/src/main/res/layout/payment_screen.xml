@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Payment"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="shipping to "
+        android:layout_below="@id/lin1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alata" />
+
+    <RelativeLayout
+        android:id="@+id/lin2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt1"
+        android:background="@drawable/bg_map_payment"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="15dp"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/map_img"
+            app:riv_corner_radius="30dp"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/location_img"
+            app:cardCornerRadius="20dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/location_img"
+                android:layout_gravity="bottom|center"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Home"
+        android:fontFamily="@font/alata"
+        android:layout_below="@id/txt1"
+        android:layout_toEndOf="@id/lin2"
+        android:layout_marginStart="26dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9796A1"
+        android:text="4140 Parker Rd. Allentown, New Mexico 31134."
+        android:fontFamily="@font/alata"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt2"
+        android:layout_toEndOf="@id/lin2"
+        android:layout_marginStart="26dp"
+        android:textSize="14sp"
+        />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Payment Method"
+        android:layout_below="@id/lin2"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/alata"
+        />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+       android:id="@+id/add_payment_method"
+        android:layout_width="46dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:padding="13dp"
+        android:src="@drawable/plusp"
+        app:riv_corner_radius="46dp"
+        android:background="@drawable/bg_selector"
+        />
+
+    <ImageView
+        android:id="@+id/master_card"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/add_payment_method"
+        android:background="@drawable/bg_email2"
+        android:paddingTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mastercard" />
+
+    <ImageView
+        android:id="@+id/paypal"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/master_card"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:src="@drawable/paypal"
+        />
+
+    <ImageView
+        android:id="@+id/applepay"
+        android:layout_width="80dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="18dp"
+        android:layout_toEndOf="@id/paypal"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:src="@drawable/apple_pay" />
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/credit_card"
+        android:layout_width="330dp"
+        android:layout_height="247dp"
+        android:layout_below="@id/add_payment_method"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:id="@+id/totalpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credit_card"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/alata"
+        android:text="Total pay"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/usd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credit_card"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/alata"
+        android:text="USD"
+        android:textColor="#9796A1"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/credit_card"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/usd"
+        android:fontFamily="@font/alata"
+        android:text="$52.50"
+        android:textColor="@color/black"
+        android:textSize="21sp" />
+    <Button
+        android:id="@+id/checkout_cart"
+        android:layout_width="248dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/totalpay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="10dp"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+
+</RelativeLayout>
