@@ -126,7 +126,7 @@
         android:textSize="12sp" />
 
     <ImageView
-        android:id="@+id/delivery_sign"
+        android:id="@+id/delivery_sign_map_restaurant"
         android:layout_width="18dp"
         android:layout_height="18dp"
         android:layout_below="@id/pizza_tag"
@@ -142,7 +142,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/pizza_tag"
         android:layout_marginStart="10dp"
-        android:layout_toEndOf="@id/delivery_sign"
+        android:layout_toEndOf="@id/delivery_sign_map_restaurant"
         android:layout_marginTop="5dp"
         android:text="free delivery"
         android:textColor="#5B5B5E"
@@ -152,7 +152,7 @@
 
     <ImageView
 
-        android:id="@+id/delivery_alarm"
+        android:id="@+id/delivery_alarm_map_restaurant"
         android:layout_width="18dp"
         android:layout_height="18dp"
         android:layout_below="@id/pizza_tag"
@@ -167,7 +167,7 @@
         android:layout_below="@id/pizza_tag"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_toEndOf="@id/delivery_alarm"
+        android:layout_toEndOf="@id/delivery_alarm_map_restaurant"
         android:text="10-15 mins"
         android:textColor="#5B5B5E"
         android:textSize="16sp"
@@ -178,14 +178,14 @@
         android:id="@+id/star"
         android:layout_width="17dp"
         android:layout_height="17dp"
-        android:layout_below="@id/delivery_sign"
+        android:layout_below="@id/delivery_sign_map_restaurant"
         android:layout_marginStart="110dp"
         android:layout_marginTop="15dp"
         android:src="@drawable/start_rating" />
 
     <TextView
         android:id="@+id/rating_txt"
-        android:layout_below="@id/delivery_sign"
+        android:layout_below="@id/delivery_sign_map_restaurant"
         android:layout_toEndOf="@id/star"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
         android:id="@+id/rating_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/delivery_sign"
+        android:layout_below="@id/delivery_sign_map_restaurant"
         android:layout_marginStart="5dp"
         android:layout_marginTop="15dp"
         android:layout_toEndOf="@id/rating_txt"
@@ -212,7 +212,7 @@
         android:id="@+id/see_reviews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/delivery_sign"
+        android:layout_below="@id/delivery_sign_map_restaurant"
         android:layout_marginStart="7dp"
         android:layout_marginTop="15dp"
         android:layout_toEndOf="@id/rating_number"

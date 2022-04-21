@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Filter"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativ_1"
+        android:layout_below="@id/lin1"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_category_item_homscreen">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/burger_img_filter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/burger_img"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast food"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/burger_img_filter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ_2"
+        android:layout_below="@id/lin1"
+        android:layout_toEndOf="@id/relativ_1"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/bg_map_payment">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/breakfast_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/break_fast"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breakfast"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/breakfast_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ_3"
+        android:layout_below="@id/lin1"
+        android:layout_toEndOf="@id/relativ_2"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/bg_map_payment">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/aisa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/aisa"
+            app:riv_corner_radius="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aisa"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/aisa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="5dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ_4"
+        android:layout_below="@id/relativ_1"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_map_payment">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/mexican"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mexican"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            app:riv_corner_radius="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/mexican"
+            android:text="Mexican"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ_5"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativ_1"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/relativ_1"
+        android:background="@drawable/bg_map_payment">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/piza_filter"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/break_fast"
+            app:riv_corner_radius="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/piza_filter"
+            android:text="pizza"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

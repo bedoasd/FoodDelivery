@@ -107,7 +107,7 @@
         android:layout_marginStart="5dp" />
 
     <ImageView
-        android:id="@+id/delivery_sign"
+        android:id="@+id/delivery_sign_map_restaurant"
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:layout_below="@id/txt1"
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/txt1"
         android:layout_marginStart="10dp"
-        android:layout_toEndOf="@id/delivery_sign"
+        android:layout_toEndOf="@id/delivery_sign_map_restaurant"
         android:layout_marginTop="5dp"
         android:text="free delivery"
         android:textColor="#5B5B5E"
@@ -130,7 +130,7 @@
         />
 
     <ImageView
-        android:id="@+id/delivery_alarm"
+        android:id="@+id/delivery_alarm_map_restaurant"
         android:layout_width="10dp"
         android:layout_height="10dp"
         android:src="@drawable/delivery_alarm"
@@ -145,7 +145,7 @@
         android:layout_below="@id/txt1"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
-        android:layout_toEndOf="@id/delivery_alarm"
+        android:layout_toEndOf="@id/delivery_alarm_map_restaurant"
         android:text="10-15 mins"
         android:textColor="#5B5B5E"
         android:textSize="12sp"
@@ -156,7 +156,7 @@
         android:id="@+id/burger_tag"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/delivery_sign"
+        android:layout_below="@+id/delivery_sign_map_restaurant"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:background="@drawable/bg_gray"
@@ -167,7 +167,7 @@
         android:id="@+id/chicken_tag"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/delivery_sign"
+        android:layout_below="@+id/delivery_sign_map_restaurant"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/burger_tag"
@@ -179,7 +179,7 @@
         android:id="@+id/fastfood_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/delivery_sign"
+        android:layout_below="@+id/delivery_sign_map_restaurant"
         android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/chicken_tag"

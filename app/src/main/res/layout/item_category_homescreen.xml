@@ -9,7 +9,7 @@
     >
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/burger_img"
+        android:id="@+id/burger_img_filter"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
@@ -24,7 +24,7 @@
         android:text="Burger"
         android:textColor="@color/white"
         android:textSize="11sp"
-        android:layout_below="@+id/burger_img"
+        android:layout_below="@+id/burger_img_filter"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         />

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_trackingimg" />
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="256dp"
+        android:layout_height="51dp"
+        android:background="@drawable/bg_email2"
+        android:orientation="horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:padding="13dp"
+            android:src="@drawable/back"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:hint="Find for food or restaurant..."
+            android:textSize="14sp"
+            android:fontFamily="@font/alata"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bg_email2"
+        android:padding="13dp"
+        android:src="@drawable/location_map" />
+
+    <RelativeLayout
+        android:layout_width="323dp"
+        android:layout_height="273dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_email2">
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/map_restaurant_logo"
+            android:layout_width="57dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_piza"
+            android:padding="3dp"
+            android:src="@drawable/starbucks"
+            app:riv_corner_radius="100dp" />
+
+        <TextView
+            android:id="@+id/map_restaurant_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/map_restaurant_logo"
+            android:fontFamily="@font/alata"
+            android:text="Starbucks"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map_restaurant_title"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@id/map_restaurant_logo"
+            android:text="4102  Pretty View Lanenda"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/map_restaurant_pizza_tag"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_restaurant_logo"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_gray"
+            android:text="PIZZA"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/map_restaurant_chicken_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_restaurant_logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@id/map_restaurant_pizza_tag"
+            android:background="@drawable/bg_gray"
+            android:text="Chicken"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/map_restaurant_fastfood_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_restaurant_logo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:layout_toEndOf="@id/map_restaurant_chicken_tag"
+            android:background="@drawable/bg_gray"
+            android:text="Fast food"
+            android:textSize="12sp" />
+
+
+        <ImageView
+            android:id="@+id/delivery_sign_map_restaurant"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/map_restaurant_pizza_tag"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/delivery_sign" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map_restaurant_pizza_tag"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/delivery_sign_map_restaurant"
+            android:text="free delivery"
+            android:textColor="#5B5B5E"
+            android:textSize="16sp"
+
+            />
+
+        <ImageView
+
+            android:id="@+id/delivery_alarm_map_restaurant"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/map_restaurant_pizza_tag"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@+id/txt2"
+            android:src="@drawable/delivery_alarm" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map_restaurant_pizza_tag"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/delivery_alarm_map_restaurant"
+            android:text="10-15 mins"
+            android:textColor="#5B5B5E"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_below="@id/delivery_sign_map_restaurant"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/start_rating" />
+
+        <TextView
+            android:id="@+id/rating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delivery_sign_map_restaurant"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/star"
+            android:text="4.5"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/rating_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delivery_alarm_map_restaurant"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/rating_txt"
+            android:text="(30+)"
+            android:textColor="#9796A1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/see_reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/delivery_alarm_map_restaurant"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/rating_number"
+            android:text="See Review"
+            android:textColor="@color/orange"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="63dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/see_reviews"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@id/rating_number"
+            android:background="@color/orange"
+
+            />
+
+
+        <Button
+            android:id="@+id/moredetails_map_restaurant"
+            android:layout_width="248dp"
+            android:layout_height="57dp"
+            android:layout_below="@id/star"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_btn_sign"
+            android:padding="10dp"
+            android:text="More Details"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

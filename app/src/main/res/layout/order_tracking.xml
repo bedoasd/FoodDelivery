@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map_trackingimg" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Order Traking"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtiv1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_btn_sign"
+        android:layout_marginTop="402dp"
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Distance"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/distance"
+            android:layout_below="@id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+            android:text="15"
+            android:textStyle="bold"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/distance_mesure"
+            android:layout_below="@id/txt1"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:text="Km"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="#8AFFFFFF"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Delivery place"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="64dp"
+            />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="6391 Elgin St. Celina,\nDelaware 10299"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/txt3"
+            android:layout_marginEnd="10dp"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/realtiv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/bg_piza2">
+
+        <RadioButton
+            android:id="@+id/radio_order_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@id/radio_order_confirmed"
+            android:fontFamily="@font/alata"
+            android:text="Order confirmed"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/alata"
+            android:text="12,30 PM"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+
+        <RadioButton
+            android:id="@+id/radio_preparing_food"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/radio_order_confirmed"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_order_confirmed"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@id/radio_order_confirmed"
+            android:fontFamily="@font/alata"
+            android:text="Prepaing Food"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_order_confirmed"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/alata"
+            android:text="12,40 PM"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+
+        <RadioButton
+            android:id="@+id/radio_food_onthe_way"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/radio_preparing_food"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_preparing_food"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@id/radio_order_confirmed"
+            android:fontFamily="@font/alata"
+            android:text="Food on the way"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_preparing_food"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/alata"
+            android:text="12,42 PM"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+
+        <RadioButton
+            android:id="@+id/radio_deliverd_to_u"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@id/radio_food_onthe_way"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="31dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_food_onthe_way"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_toEndOf="@id/radio_order_confirmed"
+            android:fontFamily="@font/alata"
+            android:text="Delivered to you"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_food_onthe_way"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/alata"
+            android:text="02,50 PM"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_below="@id/radio_deliverd_to_u"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="26dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="15dp"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/delivery_man"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_deliverd_to_u"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="35dp"
+            android:layout_toEndOf="@id/card1"
+            android:text="ID: DKS-501F9"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/delivery_man_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt4"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/card1"
+            android:fontFamily="@font/alata"
+            android:text="Farion Wick"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/cahtting"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/radio_deliverd_to_u"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_btn_minus"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/chat_icon"
+            android:padding="10dp" />
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="45dp"
+            android:src="@drawable/call"
+            android:background="@drawable/bg_btn_sign"
+            android:padding="5dp"
+            android:layout_below="@id/radio_deliverd_to_u"
+            android:layout_toStartOf="@id/cahtting"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="12dp"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
