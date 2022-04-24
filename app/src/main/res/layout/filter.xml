@@ -44,12 +44,23 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuisines"
+        android:textSize="18sp"
+        android:textColor="#111719"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/lin1"
+        />
 
     <RelativeLayout
+        android:layout_marginTop="15dp"
         android:id="@+id/relativ_1"
-        android:layout_below="@id/lin1"
         android:layout_width="112dp"
         android:layout_height="40dp"
+        android:layout_below="@id/txt1"
         android:layout_marginStart="26dp"
         android:background="@drawable/bg_category_item_homscreen">
 
@@ -57,66 +68,66 @@
             android:id="@+id/burger_img_filter"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/burger_img"
-            android:layout_marginStart="5dp"
             android:layout_centerVertical="true"
-            app:riv_corner_radius="100dp"
-            />
+            android:layout_marginStart="5dp"
+            android:src="@drawable/burger_img"
+            app:riv_corner_radius="100dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/burger_img_filter"
             android:text="Fast food"
             android:textColor="@color/white"
-            android:textSize="13sp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/burger_img_filter"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
-            />
+            android:textSize="13sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:layout_marginTop="15dp"
+
         android:id="@+id/relativ_2"
-        android:layout_below="@id/lin1"
-        android:layout_toEndOf="@id/relativ_1"
         android:layout_width="112dp"
         android:layout_height="40dp"
+        android:layout_below="@id/txt1"
         android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/relativ_1"
         android:background="@drawable/bg_map_payment">
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/breakfast_image"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/break_fast"
-            android:layout_marginStart="5dp"
             android:layout_centerVertical="true"
-            app:riv_corner_radius="100dp"
-            />
+            android:layout_marginStart="5dp"
+            android:src="@drawable/break_fast"
+            app:riv_corner_radius="100dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/breakfast_image"
             android:text="Breakfast"
             android:textColor="@color/black"
-            android:textSize="13sp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/breakfast_image"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
-            />
+            android:textSize="13sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
+        android:layout_marginTop="15dp"
+
         android:id="@+id/relativ_3"
-        android:layout_below="@id/lin1"
-        android:layout_toEndOf="@id/relativ_2"
         android:layout_width="78dp"
         android:layout_height="40dp"
+        android:layout_below="@id/txt1"
         android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/relativ_2"
         android:background="@drawable/bg_map_payment">
 
         <com.makeramen.roundedimageview.RoundedImageView
@@ -131,22 +142,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/aisa"
             android:text="Aisa"
             android:textColor="@color/black"
-            android:textSize="13sp"
-            android:layout_centerVertical="true"
-            android:layout_toEndOf="@id/aisa"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="5dp"
-            />
+            android:textSize="13sp" />
 
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativ_4"
-        android:layout_below="@id/relativ_1"
         android:layout_width="112dp"
         android:layout_height="40dp"
+        android:layout_below="@id/relativ_1"
         android:layout_marginStart="26dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/bg_map_payment">
@@ -155,11 +165,10 @@
             android:id="@+id/mexican"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:src="@drawable/mexican"
-            android:layout_marginStart="5dp"
             android:layout_centerVertical="true"
-            app:riv_corner_radius="100dp"
-            />
+            android:layout_marginStart="5dp"
+            android:src="@drawable/mexican"
+            app:riv_corner_radius="100dp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -204,6 +213,385 @@
             android:textSize="13sp" />
 
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativ_6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativ_1"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/relativ_5"
+        android:background="@drawable/bg_map_payment">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/donat"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/doant"
+            app:riv_corner_radius="100dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/donat"
+            android:text="Donat"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by"
+        android:textSize="18sp"
+        android:textColor="#111719"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/relativ_6"
+        android:layout_marginTop="25dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_sortby_popular"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt2"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_category_item_homscreen">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Popular"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_sortby_freedelivery"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt2"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/relativ_sortby_popular"
+        android:background="@drawable/bg_map_payment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Free delivery"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_sortby_Nearest_me"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt2"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/relativ_2"
+        android:background="@drawable/bg_map_payment">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Neaerst me"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/realtiv_sortby_lowtohigh"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativ_sortby_popular"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_map_payment">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Cost low to high"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/realtiv_sortby_deliver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/relativ_sortby_popular"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@id/realtiv_sortby_lowtohigh"
+        android:background="@drawable/bg_map_payment">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:text="Delivery time"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:textSize="18sp"
+        android:textColor="#111719"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/realtiv_sortby_lowtohigh"
+        android:layout_marginTop="25dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_rating_5"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_map_payment">
+
+        <TextView
+            android:id="@+id/small_start_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="5"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/small_start_5"
+            android:src="@drawable/small_star_dark"
+            app:riv_corner_radius="100dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_rating_4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt3"
+        android:layout_toEndOf="@id/relativ_rating_5"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_btn_sign">
+
+        <TextView
+            android:id="@+id/small_start_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/small_start_4"
+            android:src="@drawable/small_star_white"
+            app:riv_corner_radius="100dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_rating_3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt3"
+        android:layout_toEndOf="@id/relativ_rating_4"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_map_payment">
+
+        <TextView
+            android:id="@+id/small_start_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/small_start_3"
+            android:src="@drawable/small_star_dark"
+            app:riv_corner_radius="100dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_rating_2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt3"
+        android:layout_toEndOf="@id/relativ_rating_3"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_map_payment">
+
+        <TextView
+            android:id="@+id/small_start_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="2"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/small_start_2"
+            android:src="@drawable/small_star_dark"
+            app:riv_corner_radius="100dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/relativ_rating_1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/txt3"
+        android:layout_toEndOf="@id/relativ_rating_2"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_map_payment">
+
+        <TextView
+            android:id="@+id/small_start_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="1"
+            android:layout_marginStart="18dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="12dp"
+            android:layout_height="11dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/small_start_1"
+            android:src="@drawable/small_star_dark"
+            app:riv_corner_radius="100dp"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price range"
+        android:textSize="18sp"
+        android:textColor="#111719"
+        android:layout_marginStart="26dp"
+        android:layout_below="@+id/relativ_rating_1"
+        android:layout_marginTop="25dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/range_price"
+        android:layout_width="325dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_btn_minus"
+        android:layout_below="@id/txt4"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/btn_reset_filter"
+        android:layout_width="153dp"
+        android:layout_height="57dp"
+        android:text="RESET"
+        android:layout_below="@id/range_price"
+        android:layout_marginTop="71dp"
+        android:textColor="@color/orange"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/bg_btn_minus"
+        />
+    <Button
+        android:id="@+id/btn_apply_filter"
+        android:layout_width="153dp"
+        android:layout_height="57dp"
+        android:text="Apply"
+        android:layout_below="@id/range_price"
+        android:layout_marginTop="71dp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@id/btn_reset_filter"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/bg_btn_sign"
+        />
+
 
 
 
