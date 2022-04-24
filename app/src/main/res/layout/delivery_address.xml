@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/alata"
+                android:text="Delivery Address"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relatve_home"
+        android:layout_width="323dp"
+        android:layout_height="118dp"
+        android:layout_below="@id/lin1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_email2">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/home_id"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/bg_email2"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/txt_home"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@id/home_id"
+            android:fontFamily="@font/alata"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_home_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_home"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/home_id"
+            android:fontFamily="@font/alata"
+            android:text="542-154-5184"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_home_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_home_address"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/home_id"
+            android:fontFamily="@font/alata"
+            android:text="4261 Kembery Drive, Chicago,\n LSA"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/options_elivery_addreess"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_work"
+        android:layout_width="323dp"
+        android:layout_height="118dp"
+        android:layout_below="@id/relatve_home"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_email2">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/work_id"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:background="@drawable/bg_email2"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/work" />
+
+        <TextView
+            android:id="@+id/txt_work"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@id/work_id"
+            android:fontFamily="@font/alata"
+            android:text="HOME"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_work_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_work"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@id/work_id"
+            android:fontFamily="@font/alata"
+            android:text="542-154-5184"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_work_address2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_work_address"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/work_id"
+            android:fontFamily="@font/alata"
+            android:text="4261 Kembery Drive, Chicago,\n LSA"
+            android:textColor="@color/gray"
+            android:textSize="13sp" />
+
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/options_elivery_addreess"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="15dp" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/add_new_address"
+        android:layout_width="248dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/relative_work"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="10dp"
+        android:text="ADD NEW ADDRESS"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+
+
+</RelativeLayout>
