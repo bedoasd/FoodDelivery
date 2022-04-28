@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_email2"
+            android:padding="18dp"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add new address"
+                android:textColor="#111719"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/new_address_fill_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin1"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="50dp"
+        android:text="Full name"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_new_address_fill_name"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/new_address_fill_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_email"
+        android:paddingStart="20dp"
+        android:text="Eljad Eendaz"
+        android:textStyle="bold"
+        android:textColor="#111719"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_new_address_fill_name"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="29dp"
+        android:text="Mobile number"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/profile_email"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_piza"
+        android:paddingStart="20dp"
+        android:text="01116415463"
+        android:textStyle="bold"
+        android:textColor="#111719"
+        android:inputType="phone"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="26dp" />
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/phone_number"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_piza"
+        android:paddingStart="20dp"
+        android:text="+1 (783) 0986 8786"
+        android:textStyle="bold"
+        android:textColor="#111719"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_phone_number"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="29dp"
+        android:text="city"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
+    <EditText
+        android:id="@+id/et_city"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/city"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_piza"
+        android:paddingStart="20dp"
+        android:text="+1 (783) 0986 8786"
+        android:textStyle="bold"
+        android:textColor="#111719"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street (Include house number)"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:layout_below="@id/et_city"
+        android:layout_marginTop="29dp"
+        android:layout_marginStart="26dp" />
+    <EditText
+        android:id="@+id/et_street"
+        android:layout_width="324dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/street"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_piza"
+        android:paddingStart="20dp"
+        android:text="+1 (783) 0986 8786"
+        android:textStyle="bold"
+        android:textColor="#111719"
+        android:textSize="17sp" />
+
+
+    <Button
+        android:id="@+id/btn_save_add_new_addreess"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/et_street"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_btn_sign"
+        android:padding="10dp"
+        android:text="Save "
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

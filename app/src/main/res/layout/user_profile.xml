@@ -107,20 +107,20 @@
 
 
     <TextView
-        android:id="@+id/profile_fulname"
+        android:id="@+id/new_address_fill_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Full name"
-        android:textSize="16sp"
-        android:textColor="@color/gray"
         android:layout_below="@id/edit_profile"
+        android:layout_marginStart="26dp"
         android:layout_marginTop="50dp"
-        android:layout_marginStart="26dp" />
+        android:text="Full name"
+        android:textColor="@color/gray"
+        android:textSize="16sp" />
     <EditText
         android:id="@+id/et_profile_fulname"
         android:layout_width="324dp"
         android:layout_height="60dp"
-        android:layout_below="@id/profile_fulname"
+        android:layout_below="@id/new_address_fill_name"
         android:layout_marginStart="26dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_email"
