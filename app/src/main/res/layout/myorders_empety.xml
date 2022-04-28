@@ -107,12 +107,12 @@
         android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="No uocoming orders "
         android:layout_below="@id/empty_bill"
-        android:textColor="@color/black"
-        android:textSize="20sp"
         android:layout_centerInParent="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:text="No uocoming orders "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@id/txt2"
