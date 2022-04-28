@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:id="@+id/lin1"
@@ -41,67 +42,28 @@
         </LinearLayout>
 
 
-        <ImageView
-            android:id="@+id/profile_img_search_restaurant"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="end"
-            android:background="@drawable/profile_image"
-            android:padding="10dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="18dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/user_profile"
+
+                />
+
+        </androidx.cardview.widget.CardView>
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/lin2"
-        android:layout_width="256dp"
-        android:layout_height="51dp"
-        android:layout_below="@+id/lin1"
-        android:background="@drawable/bg_gray"
-        android:orientation="horizontal"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="35dp"
-        >
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:src="@drawable/search"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:hint="Fast food"
-            android:textSize="14sp"
-            android:fontFamily="@font/alata"
-            android:background="@android:color/transparent"
-            android:textColorHint="@color/black"
-            />
-
-
-
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="51dp"
-        android:layout_height="51dp"
-        android:layout_below="@id/lin1"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp"
-        android:background="@drawable/bg_email2"
-        android:padding="13dp"
-        android:layout_marginTop="35dp"
-        android:src="@drawable/filter" />
 
     <LinearLayout
         android:id="@+id/line3"
         android:layout_width="323dp"
         android:layout_height="55dp"
-        android:layout_below="@id/lin2"
+        android:layout_below="@id/lin1"
         android:layout_marginStart="26dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="26dp"
@@ -133,26 +95,17 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/txt_results_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/line3"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/alata"
-        android:text="Found \n56 results"
-        android:textColor="@color/black"
-        android:textSize="31sp" />
 
-    <!--GrideView-->
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_grid_restaurants_founded"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txt_results_number"
-        android:layout_marginTop="8dp"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="30dp"
         android:layout_marginStart="26dp"
-        />
+        android:layout_centerHorizontal="true" />
+
+   <!-- //1-food items is category items
+    //2-restaurant items is home screen featured items-->
 
 </RelativeLayout>
